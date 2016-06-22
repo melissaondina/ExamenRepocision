@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mislibros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Idautor</th>
+      <th>Idgenero</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  
+
+
+
+  <tbody>
+    <% @mislibros.each do |mislibro| %>
+      <tr>
+        <td><%= mislibro.nombre %></td>
+        <td><%= mislibro.descripcion %></td>
+        <td><%= mislibro.idautor %></td>
+        <td><%= link_to 'Show', mislibro %></td>
+        <td><%= link_to 'Edit', edit_mislibro_path(mislibro) %></td>
+        <td><%= link_to 'Destroy', mislibro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mislibro', new_mislibro_path %>

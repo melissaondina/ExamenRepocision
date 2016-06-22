@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @mislibro.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @mislibro.descripcion %>
+</p>
+
+<p>
+  <strong>Idautor:</strong>
+  <%= @mislibro.idautor %>
+</p>
+
+<p>
+  <strong>Idgenero:</strong>
+  <%= @mislibro.idgenero %>
+</p>
+
+<%= link_to 'Edit', edit_mislibro_path(@mislibro) %> |
+<%= link_to 'Back', mislibros_path %>

@@ -1,0 +1,2 @@
+module MigenerosHelper
+end
